@@ -40,9 +40,9 @@ public class Lab01 {
 		Scanner inKey = new Scanner(System.in);
 		
 		System.out.print("Enter a positive integer: ");
-		int input = inKey.nextInt();
+		double input = inKey.nextDouble();
 		
-		double result = Math.sqrt(26);
+		double result = Math.sqrt(input);
 		System.out.println("the square root of " + input + " is " + result + "\n");
 		
 		
@@ -60,14 +60,14 @@ public class Lab01 {
 	Scanner inKey = new Scanner(System.in);
 		
 		System.out.print("Length on side A: ");
-		int input1 = inKey.nextInt();
+		double input1 = inKey.nextDouble();
 		System.out.print("Length on side B: ");
-		int input2 = inKey.nextInt();
+		double input2 = inKey.nextDouble();
 		
 		double sideA = Math.pow(input1, 2);
 		double sideB = Math.pow(input2, 2);
 		
-		double answer = sideA += sideB;
+		double answer = Math.sqrt(sideA + sideB);
 		
 		System.out.println("Hypotenuse = " + answer);
 
@@ -78,13 +78,15 @@ public class Lab01 {
 	
 	public static void problem04() {
 		
+		Scanner inKey = new Scanner(System.in);
+		
 		int input = -1;
 		int max = -70;
 		int min = 70;
 	
 		while (input != 0) {
 			
-			Scanner inKey = new Scanner(System.in);
+			
 			
 			System.out.print("Enter an integer: ");
 			int input1 = inKey.nextInt();
